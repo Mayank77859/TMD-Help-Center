@@ -1,2 +1,242 @@
-Hello World
-<h1>-The Millennial Design</h1>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Help Center | The Millennial Design</title>
+      <!-- Styles -->
+      <!-- Normalize CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Font CSS -->
+      <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+      <!-- Box Icons CSS -->
+      <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="icon" type="image" href="img/favicon.png">
+   </head>
+   <body>
+      <div class="layout-box">
+         <!-- Layout-Box Block Starts-->
+         <header class="topnav container">
+            <div class="topnav__inner">
+               <div class="topnav__logo-wrapper">
+                  <!-- Logo Wrapper Starts-->
+                  <a class="topnav__logo" title="Go to TheMillennialDesign.com" href="#">
+                  <img src="img/logo.png" alt="Logo" class="logo__img">
+                  </a>
+                  <!-- <a class="logo__txt" title="Home" href="/hc/en-us">The Millennial Design</a> -->
+                  <a class="topnav__helpcenter" title="Home" href="/hc/en-us">Help Center</a>
+               </div>
+               <!-- Logo Wrapper Ends-->
+               <div class="topnav__controls" data-menu="">
+                  <!--Top Nav Buttons & Controls Starts-->
+                  <div class="topnav__controls__container">
+                     <!-- <button class="btn btn--topbar btn--toggle-search btn--toggle-search hidden-xs hidden-sm hidden-md hidden" data-toggle-search="">
+                        <span class="fa fa-search"></span>
+                        </button> -->
+                     <a class="btn nav-link btn--topbar submit-a-request" href="#">Submit a request</a>
+                     <a class="btn nav-link login" role="button" href="#">Sign in</a>
+                  </div>
+               </div>
+               <!--Top Nav Buttons & Controls Ends-->
+               <div class="menu__responsv">
+                  <div class="hamburger">
+                     <span class="bar"></span>
+                     <span class="bar"></span>
+                     <span class="bar"></span>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <main>
+            <section class="hero-box hero-box--large container">
+               <div class="container-inner hero-box__content">
+                  <div class="hero-box__title text-center">How can we help?</div>
+                  <form role="search" class="search-box search-box--hero-box" data-search="" data-instant="true" autocomplete="off"  accept-charset="UTF-8" method="get">
+                     <input name="utf8" type="hidden" value="✓">
+                     <input type="search" name="query" id="query" placeholder="Search" autocomplete="off" aria-label="Search">
+                     <input type="submit" name="commit" value="Search">
+                  </form>
+                  <svg class="arrow-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
+                     <g>
+                        <path d="M446.3,417.18c-3.38,0-5.35,0-7.31,0c-107.35,0-214.7-0.02-322.05,0.04c-5.82,0-11.25-0.71-15.99-4.44
+                           c-7.12-5.6-10.1-14.87-7.35-23.25c2.83-8.61,10.38-14.41,19.35-14.81c2-0.09,4-0.05,6-0.05c106.68,0,213.36,0,320.05,0
+                           c1.96,0,3.92,0,7.21,0c-2.05-2.19-3.29-3.59-4.61-4.92c-35.82-35.85-71.67-71.68-107.48-107.53c-8.92-8.93-10.77-18.21-5.61-27.49
+                           c6.34-11.4,21.01-14.53,31.38-6.64c1.85,1.41,3.53,3.05,5.17,4.7c48.34,48.32,96.66,96.66,144.99,145
+                           c12.49,12.5,12.49,23.74-0.01,36.25c-48.56,48.58-97.11,97.15-145.68,145.71c-8.95,8.94-18.17,10.82-27.48,5.69
+                           c-11.41-6.28-14.6-21-6.74-31.36c1.5-1.98,3.28-3.77,5.04-5.54c35.46-35.5,70.95-70.98,106.42-106.47
+                           C442.88,420.82,444.1,419.49,446.3,417.18z"></path>
+                     </g>
+                  </svg>
+               </div>
+            </section>
+            <!-- Help Section Starts -->
+            <div class="container">
+               <div class="container-inner tmd-support">
+                  <div class="category-list" id="category-list">
+                     <div class="category-list__items">
+                        <!-- Category List Item Start -->
+                        <div class="category-list-item">
+                           <div class="category-list-icon">
+                              <img class="category-list-png-icon" src="img/abstract.png">     
+                           </div>
+                           <div class="category-list-block">
+                              <div class="category-list-item__content">
+                                 <h4 class="category-list-item__title">Using Abstract</h4>
+                                 <div class="category-list-item__desc">Abstract lets you manage, version, and document your designs in one place.</div>
+                                 <a href="#" class="category-list-link">Learn More →</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Category List Item  End-->
+                        <!-- Category List Item Start -->
+                        <div class="category-list-item">
+                           <div class="category-list-icon">
+                              <img class="category-list-png-icon" src="img/account.png">     
+                           </div>
+                           <div class="category-list-block">
+                              <div class="category-list-item__content">
+                                 <h4 class="category-list-item__title">
+                                    Manage your account
+                                 </h4>
+                                 <div class="category-list-item__desc">Configure your account settings, such as your email, profile details, and password.</div>
+                                 <a href="#" class="category-list-link">Learn More →</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Category List Item  End-->
+                        <!-- Category List Item Start -->
+                        <div class="category-list-item">
+                           <div class="category-list-icon">
+                              <img class="category-list-png-icon" src="img/projects.png">     
+                           </div>
+                           <div class="category-list-block">
+                              <div class="category-list-item__content">
+                                 <h4 class="category-list-item__title">Manage organizations, teams, and projects</h4>
+                                 <div class="category-list-item__desc">Use Abstract organizations, teams, and projects to organize your people and your work.</div>
+                                 <a href="#" class="category-list-link">Learn More →</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Category List Item  End-->
+                        <!-- Category List Item Start -->
+                        <div class="category-list-item">
+                           <div class="category-list-icon">
+                              <img class="category-list-png-icon" src="img/billing.png">     
+                           </div>
+                           <div class="category-list-block">
+                              <div class="category-list-item__content">
+                                 <h4 class="category-list-item__title">Manage billing</h4>
+                                 <div class="category-list-item__desc">Change subscriptions and payment details.</div>
+                                 <a href="#" class="category-list-link">Learn More →</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Category List Item  End-->
+                        <!-- Category List Item Start -->
+                        <div class="category-list-item">
+                           <div class="category-list-icon">
+                              <img class="category-list-png-icon" src="img/authnticate.png">     
+                           </div>
+                           <div class="category-list-block">
+                              <div class="category-list-item__content">
+                                 <h4 class="category-list-item__title">
+                                    Authenticate to The Millennial Design
+                                 </h4>
+                                 <div class="category-list-item__desc">Set up and configure SSO, SCIM, and Just-in-Time provisioning.</div>
+                                 <a href="#" class="category-list-link">Learn More →</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Category List Item  End-->
+                        <!-- Category List Item Start -->
+                        <div class="category-list-item">
+                           <div class="category-list-icon">
+                              <img class="category-list-png-icon" src="img/support.png">     
+                           </div>
+                           <div class="category-list-block">
+                              <div class="category-list-item__content">
+                                 <h4 class="category-list-item__title">
+                                    The Millennial Design Support 
+                                 </h4>
+                                 <div class="category-list-item__desc">Get in touch with a human.</div>
+                                 <a href="#" class="category-list-link">Learn More →</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Category List Item  End-->
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Help Section Ends -->
+         </main>
+      </div>
+      <!-- Layout-Box Block Ends-->
+      <!-- Footer Starts -->
+      <footer class="footer container">
+         <div class="container-inner footer__inner">
+          <!-- Footer Column Starts -->
+          <div class="footer-column"> 
+            <h3 class="footer-title">T-Millennial</h3>
+            <a href="https://www.abstract.com">Start Trial</a>
+            <a href="#">Pricing</a>
+            <a href="#">Download</a>
+          </div>
+          <!-- Footer Column Ends -->
+           <!-- Footer Column Starts -->
+           <div class="footer-column"> 
+            <h3 class="footer-title">Resources</h3>
+            <a href="#">Blog</a>
+            <a href="#">Help Center</a>
+            <a href="#">Release Notes</a>
+            <a href="#">Status</a>
+
+          </div>
+          <!-- Footer Column Ends -->
+          <!-- Footer Column Starts -->
+          <div class="footer-column"> 
+            <h3 class="footer-title">Community</h3>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Facebook</a>
+            <a href="#">Dribbble</a>
+            <a href="#">Podcast</a>
+          </div>
+          <!-- Footer Column Ends -->
+          <!-- Footer Column Starts -->
+          <div class="footer-column"> 
+            <h3 class="footer-title">Company</h3>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a id="break" href="#">Legal</a>
+            <Strong>Contact Us</Strong>
+            <a href="mailto:info@themillennialdesign.com">Contact@tmd.com</a>
+          </div>
+          <!-- Footer Column Ends -->
+          <!-- Copyright Starts -->
+          <div class="footer-column-copyright" id="copyright"> 
+            <!-- <svg class="abstract-logo-footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 51" preserveAspectRatio="xMinYMid slice">
+                  <g class="abstract-logo-mark-footer" fill="#fff">
+                    <path d="M25.41 0C5.08 0 0 5.08 0 25.41s5.08 25.41 25.41 25.41 25.41-5.08 25.41-25.41S45.74 0 25.41 0zm-4.17 39.31A9.73 9.73 0 1 1 31 29.58a9.75 9.75 0 0 1-9.76 9.73zm17.67-.4h-4.77V16.67H11.91v-4.76h27z"></path>
+                    <circle cx="21.24" cy="29.58" r="4.96"></circle>
+                  </g>
+                </svg> -->
+                <img src="img/logo.png" alt="Logo" class="logo__img">
+            <p>© Copyright 2022</p>
+            <p>The Millennia Design, Inc.</p>
+            <p>All rights reserved</p>
+          </div>
+          <!-- Copyright Ends -->
+         </div>
+      </footer>
+      <!-- Footer Ends -->
+   </body>
+   <!-- Scripts -->
+   <script src="js/jquery.js"></script>
+   <script src="js/app.js"></script>
+   </body>
+</html>
+

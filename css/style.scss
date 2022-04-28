@@ -1,0 +1,496 @@
+// Setting up 1 Rem equal to 10px and using rem units throughout the page
+// Colors
+$primary: #4c5fd5;
+$secondary: #dadbf1;
+$background--dark: #191a1b;
+$tomato: #ff6347;
+$black: #000;
+$white: #fff;
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+  font-family: sans-serif;
+  overflow-y: scroll;
+  scrollbar-color: auto $background--dark;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+::selection {
+  // background-color: #ffa;
+  background-color: $tomato;
+  color: #000;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: $background--dark;
+  text-rendering: optimizeLegibility;
+}
+a {
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  // color: $black;
+  text-decoration: underline;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  // vertical-align: middle;
+}
+
+// Utilitiy Classes
+@mixin btn {
+  border-radius: 0.8rem;
+  font-size: 2.4rem;
+  color: $white;
+  padding: 0.6rem 2rem;
+  text-align: center;
+  line-height: 1.5;
+}
+.text-center {
+  text-align: center;
+}
+.search-box {
+  position: relative;
+}
+
+// Help Center Page Style
+// Header Styles
+.layout-box {
+  padding-bottom: 1rem;
+  position: relative;
+  background-color: $white;
+}
+
+.topnav {
+  display: flex;
+  background: $black;
+  width: 100%;
+  font-size: 1.8rem;
+  color: $white;
+  transition: margin-top 0.7s ease;
+  height: 9rem;
+}
+
+.container {
+  padding: 0 1.6rem;
+}
+
+.topnav__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1900px;
+  margin: auto;
+}
+
+.topnav__logo-wrapper {
+  display: flex;
+  align-items: center;
+  width: 35%;
+}
+
+.logo__img {
+  width: 12rem;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+.logo__txt {
+  font-size: 2.4rem;
+  vertical-align: middle;
+  color: $white;
+}
+.topnav__helpcenter {
+  display: inline-block;
+  vertical-align: middle;
+  color: $white;
+  padding: 1.2rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  transition: color 150ms ease-in-out;
+  line-height: 2.4rem;
+  border-left: 2px solid $white;
+  transition: all 0.3s;
+}
+
+// Top Nav Controls/ Buttons
+.topnav__controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 65%;
+}
+.topnav__controls__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btn {
+  @include btn;
+}
+.btn--topbar {
+  background: $background--dark;
+  border: 1px solid $white;
+}
+
+.login {
+  background: $primary;
+  color: $white;
+  border: 1px solid $primary;
+  margin-left: 1.6rem;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background: $white;
+    color: $black;
+  }
+}
+
+// Responsive Hamburger Style
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 3.2rem;
+  height: 0.3rem;
+  margin: 0.8rem auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  // background-color: #101010;
+  background: $white;
+}
+// body fixed on mobile menu active
+
+// Hero Section Style
+
+.hero-box {
+  position: relative;
+  padding-top: calc(4% + 8rem);
+  padding-bottom: calc(4% + 8rem);
+  background-color: $background--dark;
+  background: $secondary;
+  color: $white;
+  overflow: hidden;
+}
+
+.hero-box--large {
+  padding-top: 8rem;
+  padding-bottom: 12rem;
+}
+
+.container-inner {
+  max-width: 1900px;
+  margin: 0 auto;
+  width: 90%;
+}
+.hero-box__content {
+  position: relative;
+  z-index: 2;
+  max-width: 72rem;
+}
+.hero-box__title {
+  font-family: "GT America Standard", sans-serif;
+  color: $black;
+  font-size: 8rem;
+  letter-spacing: -0.2rem;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0 0 1rem;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-box--hero-box {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 72rem;
+}
+.search-box--hero-box #query {
+  padding: 1rem 1rem;
+  border-color: $black;
+  box-shadow: 0 0.9rem 1.4rem 0 rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  line-height: 2;
+  border-radius: 4px;
+  margin: 0 0 1rem;
+}
+input[type="search"] {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0.5em 1em;
+  font-size: 20px;
+  font-family: "GT America Standard", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $black;
+  background-color: $white;
+  background-image: none;
+  border: 1px solid #dee2e6;
+  border-radius: 0.4rem;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  background-clip: padding-box;
+}
+
+.search-box input[type="submit"] {
+  display: none;
+}
+
+.arrow-svg {
+  fill: #000000;
+  transform: translateY(-35%);
+  position: absolute;
+  right: 1.5rem;
+  bottom: -0.5rem;
+  z-index: 1;
+  width: 3.2rem;
+  z-index: 100;
+  transition: all 0.3s;
+  &:hover {
+    fill: $primary;
+  }
+}
+
+// TMD-Support Categories
+.container-inner.tmd-support {
+  max-width: 1600px;
+  width: 80% !important;
+}
+.category-list {
+  margin-top: 6.4rem;
+  margin-bottom: 6.4rem;
+  padding-left: 0;
+  // border-bottom: 1px solid #eceeef;
+}
+.category-list__items {
+  display: flex;
+  flex-wrap: wrap;
+  // margin-right: calc(15px * -1);
+  // margin-left: calc(15px * -1);
+}
+.category-list-item {
+  position: relative;
+  display: flex;
+  margin-bottom: 4.8rem;
+  padding-right: 15px;
+}
+// Responsive BreakPoint ----- Min Width 550 ----------------------------
+@media only screen and (min-width: 550px) {
+  .category-list-item {
+    min-height: 115px;
+    width: 50%;
+  }
+}
+.category-list-icon {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.category-list-png-icon {
+  max-height: 120px;
+  margin-right: 3rem;
+}
+.category-list-block {
+  position: relative;
+  padding: 0 1.5rem 0 0;
+  width: 100%;
+  color: $background--dark;
+  transition: all 0.3s ease;
+}
+.category-list-item__content {
+  position: relative;
+  z-index: 2;
+}
+
+.category-list-item__desc {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.category-list-item__title {
+  // font-family: 'Vesterbro', sans-serif;
+  // margin: 0;
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin: 3rem 0 1rem;
+}
+.category-list-link {
+  color: $primary;
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+.category-list-link:hover {
+  color: $primary;
+}
+.footer {
+  position: relative;
+  padding-bottom: 6rem;
+  color: $white;
+  background-color: $black;
+  font-family: "GT America Standard", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.footer__inner {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1900px;
+  position: relative;
+  padding-bottom: 10rem;
+}
+.footer-column {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 1440px) {
+  .footer-column {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 769px) {
+  .footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 180px;
+  }
+  .footer-column {
+    width: 100%;
+    flex: 30%;
+    margin-right: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 621px) {
+  .footer__inner {
+    padding-bottom: 50px;
+  }
+  .footer-column:nth-child(1),
+  .footer-column:nth-child(3) {
+    width: calc(30%);
+  }
+  .footer-column:nth-child(2),
+  .footer-column:nth-child(4) {
+    width: calc(50%);
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 620px) {
+  .footer-column {
+    width: calc(50% - 8rem);
+    margin-right: 7rem;
+  }
+  .footer-column-copyright {
+    right: unset;
+    bottom: unset !important;
+    left: 0;
+  }
+}
+.footer-title {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: bold;
+  margin: 4.8rem 0 1.6rem;
+}
+.footer a {
+  color: $white;
+  display: block;
+}
+.footer #break {
+  margin-bottom: 3rem;
+}
+.footer #copyright {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.abstract-logo-footer {
+  width: 14rem;
+  margin-bottom: 2rem;
+}
+.footer p {
+  margin: 0;
+  font-size: 2rem;
+}
+// Responsive BreakPoint --------------Mobile Menu---------- Medium ----------------------------
+@media only screen and (max-width: 768px) {
+  .topnav__logo-wrapper {
+    width: 70%;
+  }
+
+  .topnav__controls {
+    position: fixed;
+    z-index: 9999;
+    left: -100%;
+    top: 9rem;
+    flex-direction: column;
+    background-color: $black;
+    width: 100%;
+    // border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .topnav__controls.active {
+    left: 0;
+    position: absolute;
+  }
+
+  .topnav__controls__container {
+    flex-direction: column;
+  }
+  .btn {
+    margin: 1.6rem 0;
+  }
+  .menu__responsv {
+    display: flex;
+    align-items: center;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  // Hamburger Click Animation
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  .hero-box__title {
+    font-size: 4rem;
+  }
+
+  //list item
+  .category-list-item {
+    width: 100%;
+  }
+}
+// Responsive BreakPoint ------------------------ Large ----------------------------
+@media only screen and (min-width: 768px) {
+  .category-list {
+    margin-top: 12.8rem;
+  }
+}
